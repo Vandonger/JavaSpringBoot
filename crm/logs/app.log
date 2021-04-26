@@ -1,0 +1,22 @@
+[INFO ] 2021-04-24 10:50:08.210 [restartedMain] CrmApplication - Starting CrmApplication using Java 16 on VID-DONGNV19-L with PID 12496 (C:\Users\dongnv19\Desktop\Java\crm\target\classes started by dongnv19 in C:\Users\dongnv19\Desktop\Java\crm)
+[DEBUG] 2021-04-24 10:50:08.226 [restartedMain] CrmApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+[INFO ] 2021-04-24 10:50:08.231 [restartedMain] CrmApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-24 10:50:13.902 [restartedMain] CrmApplication - Started CrmApplication in 6.228 seconds (JVM running for 7.353)
+[INFO ] 2021-04-24 10:58:25.067 [restartedMain] CrmApplication - Starting CrmApplication using Java 16 on VID-DONGNV19-L with PID 12496 (C:\Users\dongnv19\Desktop\Java\crm\target\classes started by dongnv19 in C:\Users\dongnv19\Desktop\Java\crm)
+[DEBUG] 2021-04-24 10:58:25.069 [restartedMain] CrmApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+[INFO ] 2021-04-24 10:58:25.071 [restartedMain] CrmApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-24 10:58:26.735 [restartedMain] CrmApplication - Started CrmApplication in 1.792 seconds (JVM running for 500.185)
+[INFO ] 2021-04-24 10:58:46.907 [restartedMain] CrmApplication - Starting CrmApplication using Java 16 on VID-DONGNV19-L with PID 12496 (C:\Users\dongnv19\Desktop\Java\crm\target\classes started by dongnv19 in C:\Users\dongnv19\Desktop\Java\crm)
+[DEBUG] 2021-04-24 10:58:46.912 [restartedMain] CrmApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+[INFO ] 2021-04-24 10:58:46.915 [restartedMain] CrmApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-24 10:58:48.739 [restartedMain] CrmApplication - Started CrmApplication in 2.015 seconds (JVM running for 522.189)
+[ERROR] 2021-04-24 11:10:08.095 [http-nio-8080-exec-2] CustomerService - LoggingMobie number must be betwwen 10 and 11
+[ERROR] 2021-04-24 11:10:08.149 [http-nio-8080-exec-4] CustomerService - LoggingMobie number must be betwwen 10 and 11
+[INFO ] 2021-04-24 11:12:52.837 [restartedMain] CrmApplication - Starting CrmApplication using Java 16 on VID-DONGNV19-L with PID 12496 (C:\Users\dongnv19\Desktop\Java\crm\target\classes started by dongnv19 in C:\Users\dongnv19\Desktop\Java\crm)
+[DEBUG] 2021-04-24 11:12:52.839 [restartedMain] CrmApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+[INFO ] 2021-04-24 11:12:52.840 [restartedMain] CrmApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-24 11:12:53.519 [restartedMain] CrmApplication - Started CrmApplication in 0.795 seconds (JVM running for 1366.975)
+[ERROR] 2021-04-24 11:13:22.107 [http-nio-8080-exec-2] CustomerService - LoggingMobie number must be betwwen 10 and 11
+[ERROR] 2021-04-24 11:13:22.208 [http-nio-8080-exec-5] CustomerService - LoggingMobie number must be betwwen 10 and 11
+[ERROR] 2021-04-24 11:13:22.241 [http-nio-8080-exec-8] CustomerService - LoggingMobie number must be betwwen 10 and 11
+[ERROR] 2021-04-24 11:13:22.270 [http-nio-8080-exec-6] CustomerService - LoggingMobie number must be betwwen 10 and 11

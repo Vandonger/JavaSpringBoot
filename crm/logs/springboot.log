@@ -1,0 +1,203 @@
+[DEBUG] 2021-04-24 10:50:13.497 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-24 10:50:13.587 [restartedMain] RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-24 10:50:13.638 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-24 10:50:13.655 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-24 10:51:16.119 [http-nio-8080-exec-3] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-24 10:51:16.121 [http-nio-8080-exec-3] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-24 10:51:16.121 [http-nio-8080-exec-3] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-24 10:51:16.122 [http-nio-8080-exec-3] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-24 10:51:16.124 [http-nio-8080-exec-3] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7e71e93c
+[DEBUG] 2021-04-24 10:51:16.126 [http-nio-8080-exec-3] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@25901d24
+[DEBUG] 2021-04-24 10:51:16.126 [http-nio-8080-exec-3] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-24 10:51:16.127 [http-nio-8080-exec-3] DispatcherServlet - Completed initialization in 6 ms
+[DEBUG] 2021-04-24 10:51:16.140 [http-nio-8080-exec-3] DispatcherServlet - GET "/api/customer/v1/1", parameters={}
+[DEBUG] 2021-04-24 10:51:16.150 [http-nio-8080-exec-3] RequestMappingHandlerMapping - Mapped to com.onemount.crm.controller.CustomerController#findById(Long)
+[DEBUG] 2021-04-24 10:51:16.303 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-24 10:51:16.306 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Writing [Customer(id=1, fullname=Nguyen Dong, email=nguyendong@gmail.com, mobile=0388888888)]
+[DEBUG] 2021-04-24 10:51:16.329 [http-nio-8080-exec-3] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-24 10:51:16.466 [http-nio-8080-exec-4] DispatcherServlet - GET "/favicon.ico", parameters={}
+[DEBUG] 2021-04-24 10:51:16.471 [http-nio-8080-exec-4] SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+[DEBUG] 2021-04-24 10:51:16.476 [http-nio-8080-exec-4] ResourceHttpRequestHandler - Resource not found
+[DEBUG] 2021-04-24 10:51:16.478 [http-nio-8080-exec-4] DispatcherServlet - Completed 404 NOT_FOUND
+[DEBUG] 2021-04-24 10:51:16.484 [http-nio-8080-exec-4] DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[DEBUG] 2021-04-24 10:51:16.487 [http-nio-8080-exec-4] RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[DEBUG] 2021-04-24 10:51:16.510 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-24 10:51:16.516 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Writing [{timestamp=Sat Apr 24 10:51:16 ICT 2021, status=404, error=Not Found, message=No message available,  (truncated)...]
+[DEBUG] 2021-04-24 10:51:16.605 [http-nio-8080-exec-4] DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[DEBUG] 2021-04-24 10:51:19.511 [http-nio-8080-exec-5] DispatcherServlet - GET "/api/customer/v1/", parameters={}
+[DEBUG] 2021-04-24 10:51:19.512 [http-nio-8080-exec-5] RequestMappingHandlerMapping - Mapped to com.onemount.crm.controller.CustomerController#getAll()
+[DEBUG] 2021-04-24 10:51:19.645 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-24 10:51:19.646 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Writing [[Customer(id=1, fullname=Nguyen Dong, email=nguyendong@gmail.com, mobile=0388888888), Customer(id=2, (truncated)...]
+[DEBUG] 2021-04-24 10:51:19.649 [http-nio-8080-exec-5] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-24 10:58:26.624 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-24 10:58:26.635 [restartedMain] RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-24 10:58:26.653 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-24 10:58:26.667 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-24 10:58:48.570 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-24 10:58:48.577 [restartedMain] RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-24 10:58:48.594 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-24 10:58:48.600 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-24 11:09:45.423 [http-nio-8080-exec-2] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-24 11:09:45.424 [http-nio-8080-exec-2] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-24 11:09:45.424 [http-nio-8080-exec-2] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-24 11:09:45.425 [http-nio-8080-exec-2] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-24 11:09:45.427 [http-nio-8080-exec-2] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1a2c890a
+[DEBUG] 2021-04-24 11:09:45.428 [http-nio-8080-exec-2] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@41455e68
+[DEBUG] 2021-04-24 11:09:45.429 [http-nio-8080-exec-2] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-24 11:09:45.430 [http-nio-8080-exec-2] DispatcherServlet - Completed initialization in 7 ms
+[DEBUG] 2021-04-24 11:09:45.432 [http-nio-8080-exec-2] DispatcherServlet - GET "/api/customer/v1/", parameters={}
+[DEBUG] 2021-04-24 11:09:45.434 [http-nio-8080-exec-2] RequestMappingHandlerMapping - Mapped to com.onemount.crm.controller.CustomerController#getAll()
+[DEBUG] 2021-04-24 11:09:45.447 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-24 11:09:45.448 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Writing [[Customer(id=1, fullname=Nguyen Dong, email=nguyendong@gmail.com, mobile=0388888888), Customer(id=2, (truncated)...]
+[DEBUG] 2021-04-24 11:09:45.451 [http-nio-8080-exec-2] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-24 11:09:46.010 [http-nio-8080-exec-3] DispatcherServlet - GET "/api/customer/v1/", parameters={}
+[DEBUG] 2021-04-24 11:09:46.011 [http-nio-8080-exec-3] RequestMappingHandlerMapping - Mapped to com.onemount.crm.controller.CustomerController#getAll()
+[DEBUG] 2021-04-24 11:09:46.016 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-24 11:09:46.017 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Writing [[Customer(id=1, fullname=Nguyen Dong, email=nguyendong@gmail.com, mobile=0388888888), Customer(id=2, (truncated)...]
+[DEBUG] 2021-04-24 11:09:46.020 [http-nio-8080-exec-3] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-24 11:09:46.194 [http-nio-8080-exec-4] DispatcherServlet - GET "/api/customer/v1/", parameters={}
+[DEBUG] 2021-04-24 11:09:46.195 [http-nio-8080-exec-4] RequestMappingHandlerMapping - Mapped to com.onemount.crm.controller.CustomerController#getAll()
+[DEBUG] 2021-04-24 11:09:46.206 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-24 11:09:46.208 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Writing [[Customer(id=1, fullname=Nguyen Dong, email=nguyendong@gmail.com, mobile=0388888888), Customer(id=2, (truncated)...]
+[DEBUG] 2021-04-24 11:09:46.212 [http-nio-8080-exec-4] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-24 11:09:46.766 [http-nio-8080-exec-5] DispatcherServlet - GET "/api/customer/v1/", parameters={}
+[DEBUG] 2021-04-24 11:09:46.768 [http-nio-8080-exec-5] RequestMappingHandlerMapping - Mapped to com.onemount.crm.controller.CustomerController#getAll()
+[DEBUG] 2021-04-24 11:09:46.777 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-24 11:09:46.778 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Writing [[Customer(id=1, fullname=Nguyen Dong, email=nguyendong@gmail.com, mobile=0388888888), Customer(id=2, (truncated)...]
+[DEBUG] 2021-04-24 11:09:46.782 [http-nio-8080-exec-5] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-24 11:09:46.932 [http-nio-8080-exec-1] DispatcherServlet - GET "/api/customer/v1/", parameters={}
+[DEBUG] 2021-04-24 11:09:46.934 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to com.onemount.crm.controller.CustomerController#getAll()
+[DEBUG] 2021-04-24 11:09:46.940 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-24 11:09:46.941 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing [[Customer(id=1, fullname=Nguyen Dong, email=nguyendong@gmail.com, mobile=0388888888), Customer(id=2, (truncated)...]
+[DEBUG] 2021-04-24 11:09:46.943 [http-nio-8080-exec-1] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-24 11:09:47.076 [http-nio-8080-exec-8] DispatcherServlet - GET "/api/customer/v1/", parameters={}
+[DEBUG] 2021-04-24 11:09:47.077 [http-nio-8080-exec-8] RequestMappingHandlerMapping - Mapped to com.onemount.crm.controller.CustomerController#getAll()
+[DEBUG] 2021-04-24 11:09:47.081 [http-nio-8080-exec-8] HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-24 11:09:47.082 [http-nio-8080-exec-8] HttpEntityMethodProcessor - Writing [[Customer(id=1, fullname=Nguyen Dong, email=nguyendong@gmail.com, mobile=0388888888), Customer(id=2, (truncated)...]
+[DEBUG] 2021-04-24 11:09:47.086 [http-nio-8080-exec-8] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-24 11:10:07.327 [http-nio-8080-exec-10] DispatcherServlet - GET "/api/customer/v1/", parameters={}
+[DEBUG] 2021-04-24 11:10:07.330 [http-nio-8080-exec-10] RequestMappingHandlerMapping - Mapped to com.onemount.crm.controller.CustomerController#getAll()
+[DEBUG] 2021-04-24 11:10:07.344 [http-nio-8080-exec-10] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-24 11:10:07.347 [http-nio-8080-exec-10] HttpEntityMethodProcessor - Writing [[Customer(id=1, fullname=Nguyen Dong, email=nguyendong@gmail.com, mobile=0388888888), Customer(id=2, (truncated)...]
+[DEBUG] 2021-04-24 11:10:07.365 [http-nio-8080-exec-10] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-24 11:10:07.757 [http-nio-8080-exec-9] DispatcherServlet - POST "/api/customer/v1/", parameters={}
+[DEBUG] 2021-04-24 11:10:07.764 [http-nio-8080-exec-9] ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.onemount.crm.controller.CustomExceptionHandler#handleException(Exception, WebRequest)
+[WARN ] 2021-04-24 11:10:07.766 [http-nio-8080-exec-9] PageNotFound - Request method 'POST' not supported
+[DEBUG] 2021-04-24 11:10:07.789 [http-nio-8080-exec-9] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [*/*]
+[WARN ] 2021-04-24 11:10:07.799 [http-nio-8080-exec-9] ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+[DEBUG] 2021-04-24 11:10:07.812 [http-nio-8080-exec-9] DispatcherServlet - Completed 405 METHOD_NOT_ALLOWED
+[DEBUG] 2021-04-24 11:10:07.833 [http-nio-8080-exec-6] DispatcherServlet - DELETE "/api/customer/v1/4/", parameters={}
+[DEBUG] 2021-04-24 11:10:07.834 [http-nio-8080-exec-6] RequestMappingHandlerMapping - Mapped to com.onemount.crm.controller.CustomerController#deleteCustomerById(long)
+[DEBUG] 2021-04-24 11:10:07.912 [http-nio-8080-exec-6] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-24 11:10:07.922 [http-nio-8080-exec-6] HttpEntityMethodProcessor - Writing [4]
+[DEBUG] 2021-04-24 11:10:07.928 [http-nio-8080-exec-6] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-24 11:10:07.935 [http-nio-8080-exec-7] DispatcherServlet - DELETE "/api/customer/v1/100/", parameters={}
+[DEBUG] 2021-04-24 11:10:07.936 [http-nio-8080-exec-7] RequestMappingHandlerMapping - Mapped to com.onemount.crm.controller.CustomerController#deleteCustomerById(long)
+[DEBUG] 2021-04-24 11:10:07.946 [http-nio-8080-exec-7] ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.onemount.crm.controller.CustomExceptionHandler#handleBookStoreException(CRMException, WebRequest)
+[DEBUG] 2021-04-24 11:10:07.950 [http-nio-8080-exec-7] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-24 11:10:07.951 [http-nio-8080-exec-7] HttpEntityMethodProcessor - Writing [com.onemount.crm.controller.APIError@1797092e]
+[WARN ] 2021-04-24 11:10:07.956 [http-nio-8080-exec-7] ExceptionHandlerExceptionResolver - Resolved [com.onemount.crm.exception.CRMException: Cannot delete a book]
+[DEBUG] 2021-04-24 11:10:07.962 [http-nio-8080-exec-7] DispatcherServlet - Completed 404 NOT_FOUND
+[DEBUG] 2021-04-24 11:10:07.988 [http-nio-8080-exec-2] DispatcherServlet - PUT "/api/customer/v1/100/", parameters={}
+[DEBUG] 2021-04-24 11:10:07.990 [http-nio-8080-exec-2] RequestMappingHandlerMapping - Mapped to com.onemount.crm.controller.CustomerController#updateCustomer(Long, CustomerDTO)
+[DEBUG] 2021-04-24 11:10:08.033 [http-nio-8080-exec-2] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [CustomerDTO(fullname=Dr. Suzanna Moen, email=carmelo.zieme@hotmail.com, mobile=1-079-142-3750 x373)]
+[DEBUG] 2021-04-24 11:10:08.097 [http-nio-8080-exec-2] ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.onemount.crm.controller.CustomExceptionHandler#handleBookStoreException(CRMException, WebRequest)
+[DEBUG] 2021-04-24 11:10:08.098 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-24 11:10:08.099 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Writing [com.onemount.crm.controller.APIError@e6d66b1]
+[WARN ] 2021-04-24 11:10:08.101 [http-nio-8080-exec-2] ExceptionHandlerExceptionResolver - Resolved [com.onemount.crm.exception.CRMException: New customer violates constrains]
+[DEBUG] 2021-04-24 11:10:08.103 [http-nio-8080-exec-2] DispatcherServlet - Completed 400 BAD_REQUEST
+[DEBUG] 2021-04-24 11:10:08.114 [http-nio-8080-exec-3] DispatcherServlet - GET "/api/customer/v1/1", parameters={}
+[DEBUG] 2021-04-24 11:10:08.118 [http-nio-8080-exec-3] RequestMappingHandlerMapping - Mapped to com.onemount.crm.controller.CustomerController#findById(Long)
+[DEBUG] 2021-04-24 11:10:08.128 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-24 11:10:08.130 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Writing [Customer(id=1, fullname=Nguyen Dong, email=nguyendong@gmail.com, mobile=0388888888)]
+[DEBUG] 2021-04-24 11:10:08.136 [http-nio-8080-exec-3] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-24 11:10:08.145 [http-nio-8080-exec-4] DispatcherServlet - PUT "/api/customer/v1/3/", parameters={}
+[DEBUG] 2021-04-24 11:10:08.146 [http-nio-8080-exec-4] RequestMappingHandlerMapping - Mapped to com.onemount.crm.controller.CustomerController#updateCustomer(Long, CustomerDTO)
+[DEBUG] 2021-04-24 11:10:08.147 [http-nio-8080-exec-4] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [CustomerDTO(fullname=Julian Franecki, email=piedad.hayes@yahoo.com, mobile=485.221.2989 x3721)]
+[DEBUG] 2021-04-24 11:10:08.149 [http-nio-8080-exec-4] ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.onemount.crm.controller.CustomExceptionHandler#handleBookStoreException(CRMException, WebRequest)
+[DEBUG] 2021-04-24 11:10:08.150 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-24 11:10:08.152 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Writing [com.onemount.crm.controller.APIError@4cd45593]
+[WARN ] 2021-04-24 11:10:08.153 [http-nio-8080-exec-4] ExceptionHandlerExceptionResolver - Resolved [com.onemount.crm.exception.CRMException: New customer violates constrains]
+[DEBUG] 2021-04-24 11:10:08.154 [http-nio-8080-exec-4] DispatcherServlet - Completed 400 BAD_REQUEST
+[DEBUG] 2021-04-24 11:10:08.160 [http-nio-8080-exec-5] DispatcherServlet - GET "/api/customer/v1/", parameters={}
+[DEBUG] 2021-04-24 11:10:08.161 [http-nio-8080-exec-5] RequestMappingHandlerMapping - Mapped to com.onemount.crm.controller.CustomerController#getAll()
+[DEBUG] 2021-04-24 11:10:08.166 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-24 11:10:08.167 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Writing [[Customer(id=1, fullname=Nguyen Dong, email=nguyendong@gmail.com, mobile=0388888888), Customer(id=2, (truncated)...]
+[DEBUG] 2021-04-24 11:10:08.172 [http-nio-8080-exec-5] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-24 11:10:08.179 [http-nio-8080-exec-1] DispatcherServlet - POST "/api/customer/v1/", parameters={}
+[DEBUG] 2021-04-24 11:10:08.181 [http-nio-8080-exec-1] ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.onemount.crm.controller.CustomExceptionHandler#handleException(Exception, WebRequest)
+[WARN ] 2021-04-24 11:10:08.182 [http-nio-8080-exec-1] PageNotFound - Request method 'POST' not supported
+[DEBUG] 2021-04-24 11:10:08.183 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [*/*]
+[WARN ] 2021-04-24 11:10:08.184 [http-nio-8080-exec-1] ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+[DEBUG] 2021-04-24 11:10:08.185 [http-nio-8080-exec-1] DispatcherServlet - Completed 405 METHOD_NOT_ALLOWED
+[DEBUG] 2021-04-24 11:12:53.421 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-24 11:12:53.429 [restartedMain] RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-24 11:12:53.442 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-24 11:12:53.449 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-24 11:13:21.771 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-24 11:13:21.772 [http-nio-8080-exec-1] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-24 11:13:21.773 [http-nio-8080-exec-1] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-24 11:13:21.777 [http-nio-8080-exec-1] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-24 11:13:21.778 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5dba993d
+[DEBUG] 2021-04-24 11:13:21.779 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@c89d103
+[DEBUG] 2021-04-24 11:13:21.781 [http-nio-8080-exec-1] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-24 11:13:21.782 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 10 ms
+[DEBUG] 2021-04-24 11:13:21.784 [http-nio-8080-exec-1] DispatcherServlet - GET "/api/customer/v1/", parameters={}
+[DEBUG] 2021-04-24 11:13:21.790 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to com.onemount.crm.controller.CustomerController#getAll()
+[DEBUG] 2021-04-24 11:13:21.810 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-24 11:13:21.813 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing [[Customer(id=1, fullname=Nguyen Dong, email=nguyendong@gmail.com, mobile=0388888888), Customer(id=2, (truncated)...]
+[DEBUG] 2021-04-24 11:13:21.823 [http-nio-8080-exec-1] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-24 11:13:22.093 [http-nio-8080-exec-2] DispatcherServlet - POST "/api/customer/v1/", parameters={}
+[DEBUG] 2021-04-24 11:13:22.095 [http-nio-8080-exec-2] RequestMappingHandlerMapping - Mapped to com.onemount.crm.controller.CustomerController#addCustomer(CustomerDTO)
+[DEBUG] 2021-04-24 11:13:22.098 [http-nio-8080-exec-2] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [CustomerDTO(fullname=Ms. Perry Windler, email=leeann.brakus@hotmail.com, mobile=876.818.3409 x35242)]
+[DEBUG] 2021-04-24 11:13:22.109 [http-nio-8080-exec-2] ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.onemount.crm.controller.CustomExceptionHandler#handleBookStoreException(CRMException, WebRequest)
+[DEBUG] 2021-04-24 11:13:22.117 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-24 11:13:22.119 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Writing [com.onemount.crm.controller.APIError@317c5e61]
+[WARN ] 2021-04-24 11:13:22.124 [http-nio-8080-exec-2] ExceptionHandlerExceptionResolver - Resolved [com.onemount.crm.exception.CRMException: New customer violates constrains]
+[DEBUG] 2021-04-24 11:13:22.125 [http-nio-8080-exec-2] DispatcherServlet - Completed 400 BAD_REQUEST
+[DEBUG] 2021-04-24 11:13:22.146 [http-nio-8080-exec-3] DispatcherServlet - DELETE "/api/customer/v1/4/", parameters={}
+[DEBUG] 2021-04-24 11:13:22.151 [http-nio-8080-exec-3] RequestMappingHandlerMapping - Mapped to com.onemount.crm.controller.CustomerController#deleteCustomerById(long)
+[DEBUG] 2021-04-24 11:13:22.174 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-24 11:13:22.175 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Writing [4]
+[DEBUG] 2021-04-24 11:13:22.176 [http-nio-8080-exec-3] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-24 11:13:22.182 [http-nio-8080-exec-4] DispatcherServlet - DELETE "/api/customer/v1/100/", parameters={}
+[DEBUG] 2021-04-24 11:13:22.182 [http-nio-8080-exec-4] RequestMappingHandlerMapping - Mapped to com.onemount.crm.controller.CustomerController#deleteCustomerById(long)
+[DEBUG] 2021-04-24 11:13:22.186 [http-nio-8080-exec-4] ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.onemount.crm.controller.CustomExceptionHandler#handleBookStoreException(CRMException, WebRequest)
+[DEBUG] 2021-04-24 11:13:22.187 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-24 11:13:22.188 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Writing [com.onemount.crm.controller.APIError@2cd7f934]
+[WARN ] 2021-04-24 11:13:22.189 [http-nio-8080-exec-4] ExceptionHandlerExceptionResolver - Resolved [com.onemount.crm.exception.CRMException: Cannot delete a book]
+[DEBUG] 2021-04-24 11:13:22.190 [http-nio-8080-exec-4] DispatcherServlet - Completed 404 NOT_FOUND
+[DEBUG] 2021-04-24 11:13:22.205 [http-nio-8080-exec-5] DispatcherServlet - PUT "/api/customer/v1/100/", parameters={}
+[DEBUG] 2021-04-24 11:13:22.206 [http-nio-8080-exec-5] RequestMappingHandlerMapping - Mapped to com.onemount.crm.controller.CustomerController#updateCustomer(Long, CustomerDTO)
+[DEBUG] 2021-04-24 11:13:22.207 [http-nio-8080-exec-5] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [CustomerDTO(fullname=Mrs. Myrtice Lehner, email=sadye.west@hotmail.com, mobile=1-494-350-5594 x822)]
+[DEBUG] 2021-04-24 11:13:22.209 [http-nio-8080-exec-5] ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.onemount.crm.controller.CustomExceptionHandler#handleBookStoreException(CRMException, WebRequest)
+[DEBUG] 2021-04-24 11:13:22.209 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-24 11:13:22.210 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Writing [com.onemount.crm.controller.APIError@55ef5cca]
+[WARN ] 2021-04-24 11:13:22.211 [http-nio-8080-exec-5] ExceptionHandlerExceptionResolver - Resolved [com.onemount.crm.exception.CRMException: New customer violates constrains]
+[DEBUG] 2021-04-24 11:13:22.213 [http-nio-8080-exec-5] DispatcherServlet - Completed 400 BAD_REQUEST
+[DEBUG] 2021-04-24 11:13:22.219 [http-nio-8080-exec-9] DispatcherServlet - GET "/api/customer/v1/1", parameters={}
+[DEBUG] 2021-04-24 11:13:22.221 [http-nio-8080-exec-9] RequestMappingHandlerMapping - Mapped to com.onemount.crm.controller.CustomerController#findById(Long)
+[DEBUG] 2021-04-24 11:13:22.225 [http-nio-8080-exec-9] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-24 11:13:22.226 [http-nio-8080-exec-9] HttpEntityMethodProcessor - Writing [Customer(id=1, fullname=Nguyen Dong, email=nguyendong@gmail.com, mobile=0388888888)]
+[DEBUG] 2021-04-24 11:13:22.228 [http-nio-8080-exec-9] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-24 11:13:22.236 [http-nio-8080-exec-8] DispatcherServlet - PUT "/api/customer/v1/3/", parameters={}
+[DEBUG] 2021-04-24 11:13:22.237 [http-nio-8080-exec-8] RequestMappingHandlerMapping - Mapped to com.onemount.crm.controller.CustomerController#updateCustomer(Long, CustomerDTO)
+[DEBUG] 2021-04-24 11:13:22.239 [http-nio-8080-exec-8] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [CustomerDTO(fullname=Dia Cummings, email=shalon.auer@hotmail.com, mobile=1-757-767-0055)]
+[DEBUG] 2021-04-24 11:13:22.241 [http-nio-8080-exec-8] ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.onemount.crm.controller.CustomExceptionHandler#handleBookStoreException(CRMException, WebRequest)
+[DEBUG] 2021-04-24 11:13:22.242 [http-nio-8080-exec-8] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-24 11:13:22.243 [http-nio-8080-exec-8] HttpEntityMethodProcessor - Writing [com.onemount.crm.controller.APIError@7a46850e]
+[WARN ] 2021-04-24 11:13:22.245 [http-nio-8080-exec-8] ExceptionHandlerExceptionResolver - Resolved [com.onemount.crm.exception.CRMException: New customer violates constrains]
+[DEBUG] 2021-04-24 11:13:22.246 [http-nio-8080-exec-8] DispatcherServlet - Completed 400 BAD_REQUEST
+[DEBUG] 2021-04-24 11:13:22.251 [http-nio-8080-exec-7] DispatcherServlet - GET "/api/customer/v1/", parameters={}
+[DEBUG] 2021-04-24 11:13:22.251 [http-nio-8080-exec-7] RequestMappingHandlerMapping - Mapped to com.onemount.crm.controller.CustomerController#getAll()
+[DEBUG] 2021-04-24 11:13:22.255 [http-nio-8080-exec-7] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-24 11:13:22.256 [http-nio-8080-exec-7] HttpEntityMethodProcessor - Writing [[Customer(id=1, fullname=Nguyen Dong, email=nguyendong@gmail.com, mobile=0388888888), Customer(id=2, (truncated)...]
+[DEBUG] 2021-04-24 11:13:22.259 [http-nio-8080-exec-7] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-24 11:13:22.265 [http-nio-8080-exec-6] DispatcherServlet - POST "/api/customer/v1/", parameters={}
+[DEBUG] 2021-04-24 11:13:22.266 [http-nio-8080-exec-6] RequestMappingHandlerMapping - Mapped to com.onemount.crm.controller.CustomerController#addCustomer(CustomerDTO)
+[DEBUG] 2021-04-24 11:13:22.267 [http-nio-8080-exec-6] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [CustomerDTO(fullname=Demetrius Berge, email=tosha.carroll@yahoo.com, mobile=1-347-065-7097)]
+[DEBUG] 2021-04-24 11:13:22.271 [http-nio-8080-exec-6] ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.onemount.crm.controller.CustomExceptionHandler#handleBookStoreException(CRMException, WebRequest)
+[DEBUG] 2021-04-24 11:13:22.272 [http-nio-8080-exec-6] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-24 11:13:22.272 [http-nio-8080-exec-6] HttpEntityMethodProcessor - Writing [com.onemount.crm.controller.APIError@660023a9]
+[WARN ] 2021-04-24 11:13:22.273 [http-nio-8080-exec-6] ExceptionHandlerExceptionResolver - Resolved [com.onemount.crm.exception.CRMException: New customer violates constrains]
+[DEBUG] 2021-04-24 11:13:22.274 [http-nio-8080-exec-6] DispatcherServlet - Completed 400 BAD_REQUEST
