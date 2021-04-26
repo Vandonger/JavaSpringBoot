@@ -22,6 +22,9 @@ public class MyFile {
     @Column(name = "filename", nullable = false)
     private String fileName;
 
+    @Column(name = "description")
+    private String description;
+
     @Column(name = "type")
     private String type;
 
@@ -31,6 +34,13 @@ public class MyFile {
 
     public MyFile(String fileName, String type, byte[] data) {
         this.fileName = fileName;
+        this.type = type;
+        this.data = data;
+    }
+
+    public MyFile(String fileName,String description, String type, byte[] data) {
+        this.fileName = fileName;
+        this.description = description;
         this.type = type;
         this.data = data;
     }

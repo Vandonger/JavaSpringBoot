@@ -8,16 +8,19 @@ import com.onemount.demo.repository.MyFileRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.rest.webmvc.ResourceNotFoundException;
+import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
 
+@Service
 public class MyFileService {
-    @Autowired
+
+    @Autowired(required = true)
     private MyFileRepository fileRepository;
 
-    public MyFile save(MultipartFile file) throws IOException {
+    public MyFile save(MultipartFile file, String description) throws IOException {
         String filename = StringUtils.cleanPath(file.getOriginalFilename());
-        MyFile myFile = new  MyFile(filename, file.getContentType(), file.getBytes());
+        MyFile myFile = new  MyFile(filename, description, file.getContentType(), file.getBytes());
         return fileRepository.save(myFile);
     }
 
