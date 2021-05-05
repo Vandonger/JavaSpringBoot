@@ -7,6 +7,7 @@ import org.springframework.test.context.jdbc.Sql;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import java.util.List;
 import java.util.Optional;
 
 import com.onemount.demo.repository.CustomerRepository;
@@ -50,9 +51,9 @@ public class CustomerTest {
 
   @Test
   public void getCustomerByJob() {
-    Optional<Customer> optional = customerRepository.findByJob("Human Resources Assistant II");
-    if (optional.isPresent()) {
-      assertThat(optional.get()).extracting("lastName").isEqualTo("Moff");
+    List<Customer> list = customerRepository.findByJob("Human Resources Assistant II");
+    if (list.size() > 0) {
+      assertThat(list.get(0)).extracting("job").isEqualTo("Human Resources Assistant II");
     }
   }
 

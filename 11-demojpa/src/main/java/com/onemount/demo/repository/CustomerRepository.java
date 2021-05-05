@@ -1,5 +1,6 @@
 package com.onemount.demo.repository;
 
+import java.util.List;
 import java.util.Optional;
 
 import com.onemount.demo.model.Customer;
@@ -10,5 +11,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface CustomerRepository extends JpaRepository<Customer, Long>{
     Optional<Customer> findByEmail(String email);
-    Optional<Customer> findByJob(String job);
+    List<Customer> findByJob(String job);
 }
